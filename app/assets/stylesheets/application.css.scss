@@ -19,7 +19,7 @@ body {
     font-family: 'Coming Soon', cursive;
 }
 
-.menu {
+.header-nav {
     box-shadow: none !important;
     border-bottom: none !important;
     background: transparent !important;
@@ -36,4 +36,9 @@ body {
     border-bottom-style: solid;
     padding-bottom: 10px;
 
+}
+
+
+.bars.icon {
+    font-size: 24px;
 }
