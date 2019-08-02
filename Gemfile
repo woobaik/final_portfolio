@@ -36,6 +36,7 @@ gem 'devise', '~> 4.6', '>= 4.6.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'semantic-ui-sass', '~> 2.4', '>= 2.4.2.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -50,6 +51,8 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'guard-livereload', '~> 2.5', require: false
+  
+
 end
 
 group :test do
