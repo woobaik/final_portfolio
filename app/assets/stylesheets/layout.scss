@@ -19,11 +19,6 @@
 
 }
 
-.bars.icon {
-    font-size: 24px;
-}
-
-
 .item.sidebar-item {
     padding: 3rem 0 !important;
 }
@@ -31,8 +26,6 @@
 .item.sidebar-item:hover {
     color: orange !important;
 }
-
-
 
 .sidebar-profie-img {
     height: 50px;
@@ -43,10 +36,14 @@
     
 }
 
-
 .sidebar-profie-img {
     width: 50px !important;
     height: 50px;
     border-radius: 50%;
     margin-bottom: 1rem !important;
+}
+
+.main-content {
+    padding-top: 4rem;
+    padding-left: 2.5rem;
 }
