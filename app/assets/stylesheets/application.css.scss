@@ -53,13 +53,11 @@ html.ios body {
     font-size: 24px;
 }
 
-.ui.left.vertical.menu.sidebar.uncover.visible:first-child {
-    
-}
+
 .item.sidebar-item {
     padding: 3rem 0 !important;
 }
 
-.close-icon {
-    font-size: 2rem;
+.item.sidebar-item:hover {
+    color: orange !important;
 }

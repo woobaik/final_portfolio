@@ -151,6 +151,8 @@ GEM
     public_suffix (3.1.1)
     puma (3.12.1)
     rack (2.0.7)
+    rack-livereload (0.3.17)
+      rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.3)
@@ -248,12 +250,14 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise (~> 4.6, >= 4.6.2)
+  guard (~> 2.15)
   guard-livereload (~> 2.5)
   jbuilder (~> 2.5)
   jquery-rails (~> 4.3, >= 4.3.5)
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
+  rack-livereload (~> 0.3.17)
   rails (~> 5.2.3)
   sass-rails (~> 5.0)
   selenium-webdriver
