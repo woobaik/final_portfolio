@@ -14,6 +14,9 @@
  *= require_self
  */
 @import "semantic-ui";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 
 body {
     font-family: 'Coming Soon', cursive;
@@ -28,36 +31,3 @@ html.ios body {
   height: initial !important;
 }
 
-.header-nav {
-    box-shadow: none !important;
-    border-bottom: none !important;
-    background: transparent !important;
-}
-.main-nav-logo {
-    font-size: 30px;
-    text-align: center;
-    padding: 10px 0px;
-    font-family: 'Coming Soon', cursive;
-
-}
-
-.main-nav-logo-text {
-    border-bottom-width: 3px;
-    border-bottom-color: black;
-    border-bottom-style: solid;
-    padding-bottom: 10px;
-
-}
-
-.bars.icon {
-    font-size: 24px;
-}
-
-
-.item.sidebar-item {
-    padding: 3rem 0 !important;
-}
-
-.item.sidebar-item:hover {
-    color: orange !important;
-}
