@@ -1,4 +1,4 @@
-class PortfolioController < ApplicationController
+class PortfoliosController < ApplicationController
 
   before_action :find_portfolio, only: [:show, :edit, :update, :destroy]
   

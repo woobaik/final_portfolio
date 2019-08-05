@@ -15,15 +15,18 @@
     border-bottom-color: black;
     border-bottom-style: solid;
     padding-bottom: 10px;
-    
+}
 
+.main-nav-icons {
+    font-size: 2rem;
+    text-align: center;
+    top: 20px;
 }
 
 .bars.icon {
     font-size: 20px;
 
 }
-
 
 .item.sidebar-item {
     padding: 3rem 0 !important;
@@ -32,8 +35,6 @@
 .item.sidebar-item:hover {
     color: orange !important;
 }
-
-
 
 .sidebar-profie-img {
     height: 50px;

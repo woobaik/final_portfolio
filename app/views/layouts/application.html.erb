@@ -16,6 +16,10 @@
     <p class="alert"><%= alert %></p>
     <%= render 'layouts/header'%>
     <%= render 'layouts/sidebar'%>
-    <%= yield %>
+    <div class="main-content">
+      <div class="my-container">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
