@@ -146,17 +146,18 @@
     <div class="my-container">
       <div class="my-card">
         <div class="my-card-image">
-          <img class="card-image" src="https://static1.squarespace.com/static/55491642e4b0cb0b033d590e/554a5a01e4b034d1a11ed440/554a607fe4b02adda69fe13d/1455902099459/?format=1000w"/>
+          <a href=<%= portfolio_path(portfolio) %>><img class="card-image" src="https://static1.squarespace.com/static/55491642e4b0cb0b033d590e/554a5a01e4b034d1a11ed440/554a607fe4b02adda69fe13d/1455902099459/?format=1000w"/></a>
+          
         </div>
         <div class="my-card-date">
           <%= portfolio.created_at.strftime("%b %d")%>
         </div>
         <div class="my-card-title">
-          <%= portfolio.name %>
+          <%= link_to portfolio.name, portfolio %>
         </div>
         <hr style="width: 50%">
         <div class="my-card-description">
-          <%= portfolio.description %>
+          <%= link_to portfolio.description, portfolio %>
         </div>
         <hr class="horizontal-line">
         <div class="my-card-category">
