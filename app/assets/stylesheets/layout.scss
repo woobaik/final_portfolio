@@ -4,7 +4,7 @@
     background: transparent !important;
 }
 .main-nav-logo {
-    font-size: 30px;
+    font-size: 2vw;
     text-align: center;
     padding: 10px 0px;
     font-family: 'Shrikhand', cursive;
@@ -59,4 +59,13 @@
 .main-content {
     
     padding: 4rem 2.5rem;
+}
+
+.my-footer {
+  padding: 3rem;
+  text-align: center;
+  line-height: 5;
+  background-color: black;
+  color: gray;
+  font-family: 'lobo'
 }
