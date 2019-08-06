@@ -8,6 +8,7 @@
     text-align: center;
     padding: 10px 0px;
     font-family: 'Shrikhand', cursive;
+    transition: all 0.3s ease-in-out;
 }
 
 .main-nav-logo-text {
@@ -15,6 +16,12 @@
     border-bottom-color: black;
     border-bottom-style: solid;
     padding-bottom: 10px;
+}
+
+.main-nav-logo-text:hover {
+    color: #606060;
+    transition: all 0.3s ease-in-out;
+
 }
 
 .main-nav-icons {

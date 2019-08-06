@@ -1,2 +1,29 @@
-<h1>Portfolio#show</h1>
-<p>Find me in app/views/portfolio/show.html.erb</p>
+<div class="my-portfolio-container">
+    <img class="card-image" src="https://static1.squarespace.com/static/55491642e4b0cb0b033d590e/554a5a01e4b034d1a11ed440/554a607fe4b02adda69fe13d/1455902099459/?format=1000w"/>
+    <div class="my-portfolio-date">
+        <%= @portfolio.created_at.strftime("%b %d")%>
+    </div>
+
+    <div class="my-portfolio-title">
+        <%= @portfolio.name %>
+    </div>
+    
+    <hr class="horizontal-line-20">
+
+    <div class="my-portfolio-categories">
+        <% if @portfolio.categories %>
+            <% @portfolio.categories.each do |category| %>
+                <%= category.name %>
+            <% end %>
+        <% end %>
+    </div>
+
+    <div class="my-portfolio-main">
+        <div class="my-portfolio-description">
+            <%= @portfolio.description %>
+        </div>
+        <div class="my-portfolio-profile centered">
+            this is my profile
+        </div>
+    </div>
+</div>

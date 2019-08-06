@@ -22,6 +22,9 @@
   box-sizing: border-box;
 }
 
+a {
+  color: black;
+}
 body {
     font-family: 'Coming Soon', cursive;
 }
@@ -35,3 +38,10 @@ html.ios body {
   height: initial !important;
 }
 
+.horizontal-line-20 {
+  width: 20%;
+}
+
+.horizontal-line-50 {
+  width: 50%;
+}
