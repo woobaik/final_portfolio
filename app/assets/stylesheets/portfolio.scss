@@ -35,11 +35,23 @@
 }
 
 .my-portfolio-description {
-    flex-grow: 2;
-    
+    text-align: left;
+    line-height: 1.5;
+    width: 75%;
 }
 
 .my-portfolio-profile {
-    flex-grow: 1;
+    width: 25%;
     text-align: center;
+}
+
+.my-portfolio-name a {
+  color: #FD8844;
+  font-size: 27px;
+  transition: all 0.3s ease-in-out
+}
+
+.my-portfolio-name a:hover {
+  color: #181818;
+  transition: all 0.3s ease-in-out
 }
