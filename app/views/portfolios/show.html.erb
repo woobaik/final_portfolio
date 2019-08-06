@@ -23,7 +23,11 @@
     <div class="my-portfolio-main">
         <div class="my-portfolio-description">
             <%= @portfolio.description %>
+            <% if @portfolio.images.length != 0 %>
+                <%= @portfolio.images.length%>
+            <% end %>
         </div>
+
         <div class="my-portfolio-profile">
             <%= image_tag 'side_bar/joungwoobaik', size:150, class: "sidebar-profile-img"%>
             <div class="my-portfolio-profile-name">
@@ -36,8 +40,8 @@
             </div>
 
             <div class="my-portfolio-websites">
-                <a href="https://www.github.com/woobaik" target="_blank"><i class="github square icon"></i></a>
-                <a href="https://www.linkedin.com/in/baik/" target="_blank"><i class="linkedin icon"></i></a>
+                <a href="https://www.github.com/woobaik" target="_blank" data-tooltip="My Github Page! Take a look at my work" data-position="bottom right" data-inverted=""><i class="github square icon"></i></a>
+                <a href="https://www.linkedin.com/in/baik/" target="_blank" data-tooltip="Click for my LinkedIn Page!" data-position="bottom right" data-inverted=""><i class="linkedin icon"></i></a>
             </div>
         </div>
         
