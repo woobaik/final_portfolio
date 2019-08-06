@@ -38,20 +38,43 @@
     text-align: left;
     line-height: 1.5;
     width: 75%;
+    margin: 2rem;
 }
 
 .my-portfolio-profile {
     width: 25%;
-    text-align: center;
+    text-align: left;
 }
 
-.my-portfolio-name a {
+.my-portfolio-profile-name a {
+  padding-top: 1.5rem;
   color: #FD8844;
   font-size: 27px;
   transition: all 0.3s ease-in-out
 }
 
-.my-portfolio-name a:hover {
+.my-portfolio-profile-name a:hover {
   color: #181818;
   transition: all 0.3s ease-in-out
 }
+
+.my-portfolio-profile-description {
+  padding-top: 1.5rem;
+  line-height: 2;
+}
+
+.my-portfolio-websites {
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+.my-portfolio-websites i {
+  transition: all 0.3s ease-in-out;
+}
+
+.my-portfolio-websites i:hover {
+  color: #FD8844;
+  font-size: 2.3rem;
+  transition: all 0.3s ease-in-out
+}
+

@@ -13,7 +13,9 @@
     <div class="my-portfolio-categories">
         <% if @portfolio.categories %>
             <% @portfolio.categories.each do |category| %>
-                <%= category.name %>
+                <div>
+                    <%= category.name %>
+                </div>
             <% end %>
         <% end %>
     </div>
@@ -24,11 +26,18 @@
         </div>
         <div class="my-portfolio-profile">
             <%= image_tag 'side_bar/joungwoobaik', size:150, class: "sidebar-profile-img"%>
-            <div class="my-portfolio-name">
-                <%= link_to 'Joungwoo Baik', 'https://wwww.github.com/woobaik' %>
+            <div class="my-portfolio-profile-name">
+                <a href="https://github.com/woobaik" target="_blank">Joungwoo Baik</a>
             </div>
-            <div class="my-portfolio-description">
-                ipsum lorem laskdlkf dafkjsldkfj sdlkfjsldkfj alfkjsldkfj v cdclksj ckjclkj fdsf sdfkjsldkfj c
+            <div class="my-portfolio-profile-description">
+                Born and raised in Seoul, South Korea. </br>
+                Educated in San Francisco, California. </br>
+                SF bay area based Software Developer.  </br>
+            </div>
+
+            <div class="my-portfolio-websites">
+                <a href="https://www.github.com/woobaik" target="_blank"><i class="github square icon"></i></a>
+                <a href="https://www.linkedin.com/in/baik/" target="_blank"><i class="linkedin icon"></i></a>
             </div>
         </div>
         
