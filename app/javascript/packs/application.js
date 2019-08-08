@@ -15,4 +15,19 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-console.log('Hello World from Webpacker')
+
+
+import ScrollMagic from 'scrollmagic'
+
+document.addEventListener("turbolinks:load", function () {
+    
+    var controller = new ScrollMagic.Controller()
+    var Showscene = new ScrollMagic.Scene({
+        triggerElement: '#trigger1',
+        triggerHook: '0',
+        duration: '200'
+    })
+    .addIndicators({ name: 'scene1' })
+    .addTo(controller)    
+});
+
