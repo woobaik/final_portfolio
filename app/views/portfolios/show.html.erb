@@ -4,13 +4,13 @@
         <%= @portfolio.created_at.strftime("%b %d")%>
     </div>
 
-    <div class="my-portfolio-title">
+    <div class="my-portfolio-title portfolio-reveal">
         <%= @portfolio.name %>
     </div>
     
-    <hr class="horizontal-line-20">
+    <hr class="horizontal-line-20 portfolio-reveal">
 
-    <div class="my-portfolio-categories">
+    <div class="my-portfolio-categories portfolio-reveal">
         <% if @portfolio.categories %>
             <% @portfolio.categories.each do |category| %>
                 <div>
@@ -21,7 +21,7 @@
     </div>
 
     <div class="my-portfolio-main">
-        <div class="my-portfolio-description">
+        <div class="my-portfolio-description portfolio-reveal">
             <%= @portfolio.description %>
             <% if @portfolio.images.length != 0 %>
                 <%= @portfolio.images.length%>

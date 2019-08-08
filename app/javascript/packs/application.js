@@ -16,18 +16,20 @@
 // const imagePath = (name) => images(name, true)
 
 
-
-import ScrollMagic from 'scrollmagic'
+var controller = new ScrollMagic.Controller()
 
 document.addEventListener("turbolinks:load", function () {
+    var toggleElement = document.querySelectorAll('.portfolio-reveal');
     
-    var controller = new ScrollMagic.Controller()
-    var Showscene = new ScrollMagic.Scene({
-        triggerElement: '#trigger1',
-        triggerHook: '0',
-        duration: '200'
-    })
-    .addIndicators({ name: 'scene1' })
-    .addTo(controller)    
+    for (let i = 0; i < toggleElement.length; i++) {
+        var Showscene = new ScrollMagic.Scene({
+            triggerElement: '.my-portfolio-title',
+            triggerHook: '0.9',
+        })
+            .setClassToggle(toggleElement[i], 'visible')
+            .addIndicators({ name: 'scene1' })
+            .addTo(controller)    
+    }
+    
 });
 
