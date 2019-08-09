@@ -39,18 +39,13 @@
     line-height: 1.5;
     width: 75%;
     margin: 2rem;
+    display: inline-block;
+    white-space: pre-wrap;
 }
 
 .my-portfolio-profile {
     width: 25%;
     text-align: left;
-}
-
-.my-portfolio-profile-name a {
-  padding-top: 1.5rem;
-  color: #FD8844;
-  font-size: 27px;
-  transition: all 0.3s ease-in-out
 }
 
 .my-portfolio-profile-name a:hover {
@@ -62,6 +57,26 @@
   padding-top: 1.5rem;
   line-height: 2;
 }
+
+.portfolio-image {
+  width: 100%;
+}
+
+.portfolio-image img {
+  width: 100%;
+}
+
+.image-line {
+  color: gray;
+}
+
+.my-portfolio-profile-name a {
+  padding-top: 1.5rem;
+  color: #FD8844;
+  font-size: 27px;
+  transition: all 0.3s ease-in-out
+}
+
 
 .my-portfolio-websites {
   margin-top: 3rem;
@@ -102,3 +117,5 @@
         -o-transform: none;
           transform: none;
 }
+
+

@@ -1,10 +1,9 @@
-<% @portfolios.each do |portfolio| %>
-  <div class="main-content">
-    <div class="my-container">
+<div class="main-content">
+  <div class="my-container">
+      <% @portfolios.each do |portfolio| %>
       <div class="my-card">
         <div class="my-card-image">
-          <a href=<%= portfolio_path(portfolio) %>><img class="card-image" src="https://static1.squarespace.com/static/55491642e4b0cb0b033d590e/554a5a01e4b034d1a11ed440/554a607fe4b02adda69fe13d/1455902099459/?format=1000w"/></a>
-          
+          <a href=<%= portfolio_path(portfolio) %>><img class="card-image" src="https://static1.squarespace.com/static/55491642e4b0cb0b033d590e/554a5a01e4b034d1a11ed440/554a607fe4b02adda69fe13d/1455902099459/?format=1000w"/></a>          
         </div>
         <div class="my-card-date">
           <%= portfolio.created_at.strftime("%b %d")%>
@@ -14,7 +13,7 @@
         </div>
         <hr style="width: 50%">
         <div class="my-card-description">
-          <%= link_to portfolio.description, portfolio %>
+          <%= link_to truncate(portfolio.description, length: 100) {link_to 'Continue', portfolio, class: 'my-card-description-continue' }, portfolio %>
         </div>
         <hr class="horizontal-line">
         <div class="my-card-category">
@@ -27,6 +26,6 @@
           <% end %>          
         </div>
       </div>  
-    </div>
+      <% end %>
   </div>
-<% end %>
+</div>

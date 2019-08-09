@@ -15,7 +15,7 @@
     </div>
     <div class="field">
         <%= f.label :images %>
-        <%= f.file_field :images %>
+        <%= f.file_field :images, multiple: true %>
     </div>
     
     <%= f.submit button_name, class: 'ui olive basic button' %>
